@@ -1,0 +1,32 @@
+{
+  "name": "testLedger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require @babel/register test/**/*.spec.js",
+    "start": "nodemon --exec 'clear;babel-node' index.js"
+  },
+  "keywords": [],
+  "author": "Ronald Sarmiento <ronald@trugroup.tech>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/node": "^7.12.6",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-syntax-import-meta": "^7.10.4",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-stage-3": "^7.8.3",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "@ledgerhq/hw-app-btc": "^5.34.1",
+    "@ledgerhq/hw-transport-node-hid-singleton": "^5.34.0",
+    "bitcoinjs-lib": "^5.2.0",
+    "regtest-client": "^0.2.0"
+  }
+}
